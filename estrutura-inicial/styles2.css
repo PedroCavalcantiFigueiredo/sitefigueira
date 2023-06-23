@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Open+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-style: #78665D;
+}
+
+body{
+    height: 900vh;
+    background-color: black;
+    color:#78665D;
+    
+}
+
+main{
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+nav.menu-h{
+    width: 80px;
+    height: 100%;
+    background-color: rgb(37, 37, 37);
+    padding: 40px 0px 40px 1%;
+    box-shadow: 10px 0 0 #78665D;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .4s;
+}
+
+nav.menu-h:hover{
+    width: 300px;
+}
+
+.btn-expandir{
+    width: 100%;
+    padding-left: 10px;
+}
+
+.btn-expandir > i{
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu:hover{
+    background-color: #78665D;
+
+}
+
+ul li.item-menu{
+    transition: .5s;
+}
+
+ul li.item-menu a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display:flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 40px;
+}
+
+ul li.item-menu a .icon > i{
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+#folhabranca{
+    width: 30px;
+    margin-left: 5px;
+}
+
+h1{
+    margin-top: 40px;
+    font-size: 100px;
+}
+
+h2{
+    margin-top: 30px;
+    font-size: 50px;
+
+}
+
+h4{
+    margin-top: 20px;
+    font-size: medium;
+}
+
+.formu{
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: larger;
+}
+
+p{
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: large;
+    
+}
+
+.container{
+    display: flex;
+}
+
+.davi #quemeodavi{ 
+    margin-right: 30px;
+}
+
+#fotofigueira{
+    width: 600px;
+    padding: 40px;
+
+}
+
+.pedro{
+    text-align: right;
+}
+
+.davi{
+    text-align: left;
+}
