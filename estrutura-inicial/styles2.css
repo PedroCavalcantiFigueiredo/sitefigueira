@@ -2,7 +2,7 @@
 
 
 :root{
-    --color-neutral-0: #FFFF;
+    --color-neutral-0: #e6e6e6;
     --color-neutral-10: #2e2e2e;
     --color-neutral-30: #78665D;
     --color-neutral-40: #000000;
@@ -24,6 +24,9 @@ body{
     color:#78665D;
     position: relative;
     flex-grow: 1;
+    background-image: url('./img/figueirafolha\ \(1\).png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container{
@@ -32,6 +35,32 @@ body{
     min-height: 100vh;
 }
 
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 50px;
+    border: 7px solid #78665D;
+}
+
+th, caption{
+    padding: 8px;
+    font-size: 35px;
+    font-weight: bold;
+    background-color: #78665d6b;
+    color:#e6e6e6;
+    border: 3px solid #78665D;
+}
+
+tr{
+    background-color: #2e2e2e;
+}
+
+td{
+    border: 3px solid #78665D;
+    padding: 8px;
+    font-size: 30px;
+    color: #e6e6e6;
+}
 
 main{
     margin-left: 150px;
@@ -70,7 +99,7 @@ nav.menu-h:hover{
 }
 
 .btn-expandir > i{
-    color: white;
+    color: #e6e6e6;
     font-size: 30px;
     cursor: pointer;
 }
@@ -90,7 +119,7 @@ ul li.item-menu{
 }
 
 ul li.item-menu a{
-    color: whitesmoke;
+    color: #e6e6e6;
     text-decoration: none;
     font-size: 20px;
     padding: 20px 4%;
@@ -122,7 +151,6 @@ h1{
 h2{
     margin-top: 30px;
     font-size: 50px;
-
 }
 
 h4{
@@ -133,7 +161,42 @@ h4{
 .formu{
     margin-top: 20px;
     font-weight: bold;
-    font-size: larger;
+    font-size: 25px;
+}
+
+.campoform{
+    border-radius: 8px;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.campoform:focus{
+    background-color: #ffffff9c;
+}
+
+#bodyobg{
+    background-position-y: 150%;
+}
+
+#obg{
+    text-align: center;
+    height: 100vh;
+    padding: 90px;
+    margin-right: 90px;
+    color: #1f1515;
+}
+
+#btnenviar{
+    background-color: #2e2e2e;
+    color: #e6e6e6;
+    border-radius: 8px;
+    font-size: 25px;
+    padding: 10px;
+    transition: .4s;
+}
+
+#btnenviar:hover{
+    background-color: #78665D;
 }
 
 p{
@@ -146,8 +209,15 @@ p{
     margin-right: 50px;
 }
 
+#titleqmefigueira{
+    color: #e6e6e6;
+}
+.qm{
+    color: #e6e6e6;
+}
+
 #fotofigueira{
-    width: 700px;
+    width: 600px;
     padding: 40px;
 
 }
@@ -213,7 +283,7 @@ p{
     justify-content: center;
     font-weight: bold;
     background-color: #78665D;
-    color:white;
+    color:#e6e6e6;
 }
 
 #folhaetxtfooter{
@@ -231,3 +301,82 @@ p{
     padding: 10px;
 }
 
+#capa{
+    width: 100%;
+    border: #78665D solid 2px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.folhaefigueira{
+    text-align: center;
+    margin-top: 10px;
+}
+
+#somos{
+    text-align: center;
+    font-size: 25px;
+    padding-top: 20px;
+    color:#e6e6e6;
+}
+
+#ouca{
+    padding: 30px;
+    padding-right: 30px;
+    margin-right: 60px;
+}
+
+#botaoroll{
+    width: 50px;
+    align-items: center;
+    margin-left: 96.9%;
+    margin-top: 47%;
+    display: flex;
+    position: fixed;
+    animation: jumping 1s linear infinite;
+    cursor: pointer;
+}
+
+@keyframes jumping {
+    from{transform: translateY(-15px);}
+    50%{transform: translateY(0);}
+    to{transform: translateY(-15px);}
+}
+
+#txtclipe{
+    padding: 30px;
+    font-size: 30px;
+}
+
+#nossasmusicas{
+    padding: 30px;
+    color: #e6e6e6;
+}
+
+#apoie{
+    margin-left: 15%;
+    margin-top: 20px;
+    color: #e6e6e6;
+    font-weight: bolder;
+
+}
+
+#fundoloja{
+    background-image: url('./img/fgr_11.png');
+    background-size: cover;
+    color: #ffffffb7;
+}
+
+#fundomusic{
+    background-image: url('./img/FGR_phot.png');
+    background-size: cover;
+}
+
+background-image{
+    opacity: 0.2;
+}
+
+#txtclipe{
+    color: #e6e6e6;
+    margin-bottom: 20px;
+}

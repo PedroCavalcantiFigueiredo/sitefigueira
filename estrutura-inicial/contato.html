@@ -58,35 +58,46 @@
             <img src="img/folhafigueiramarrom.png" width="50px"/>
             <img src="img/FGR_full.png" width="200px"/>
             <h1>Fale com a Figueira</h2>
-            <h4> Leve a Figueira na sua igreja!</h4>
-            <form class="formu" action="./index.html">
-                <label for="nome">Nome completo</label>
-                <input style="display: block;" id="nome" type="text" name="nome" />
+            <h2> Leve a Figueira na sua igreja!</h2>
+            <form class="formu" action="https://formsubmit.co/a3426c44a5f92bcf9f6f0aa650e792a9" method="POST">
+                <label for="nome">Nome completo:</label>
+                <input style="display: block;" class="campoform" id="nome" type="text" name="Nome" />
                 <br>
     
-                <label for="igreja">Nome da sua igreja</label>
-                <input style="display: block;" id="igreja" type="text" name="igreja"/>
+                <label for="igreja">Nome da sua igreja:</label>
+                <input style="display: block;" class="campoform" id="igreja" type="text" name="Igreja"/>
                 <br>
                 
-                <label for="email">Email</label>
-                <input style="display: block;" id="email" type="email" name="email" placeholder="Insira um email válido"/>
+                <label for="email">Email:</label>
+                <input style="display: block;" class="campoform" id="email" type="email" name="Email" placeholder="  Insira um email válido"/>
                 <br>
                 
-                <label for="tel">Telefone</label>
-                <input style="display: block;" id="tel" type="tel" name="telefone" placeholder="Número de WhatsApp" />
+                <label for="tel">Telefone com DDD:</label>
+                <input style="display: block;" class="campoform" id="tel" type="tel" name="Telefone" placeholder="  (XX) X XXXX-XXXX"/>
                 <br>
                 
-                <label>Mensagem</label>
-                <textarea style="display: block;" id="msg" type="text" name="msg" rows="20" placeholder="Sua mensagem aqui"></textarea>
+                <label>Mensagem:</label>
+                <textarea style="display: block;" class="campoform" id="msg" type="text" name="msg" rows="5" placeholder="  Sua mensagem aqui"></textarea>
                 <br>
     
                 <label for="file">Anexar um arquivo</label>
-                <input style="display: block;" id="file" type="file" name="file" />
+                <input style="display: block;" class="campoform" id="file" type="file" name="file" />
                 <br>
+                
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/estrutura-inicial/obrigado.html">
+                <input type="hidden" name="_subject" value="NOVA MENSAGEM DO FORMULÁRIO">
     
-                <button style="display: block;">Enviar</button>
+                <button id="btnenviar" style="display: block;">Enviar mensagem!</button>
             </form>
+            <br>
+            <br>
+            <br>
+            <h4>Nosso email de contato: figueirabanda@gmail.com</h4>
         </main>
+        <div id="botaoroll">
+            <img id="imgbotao" src="./img/down-arrow.svg">
+            <script src="./main.js"></script>
+        </div>
     </body>
     <footer>
         <div id="footer_content">
@@ -128,10 +139,12 @@
                     <a href="https://deezer.page.link/QgsSSpfqy2uJT7579" class="footer-link" target="_blank" >Deezer</a>
                 </li>
             </ul>
+            <a href="./img/pix.png" id="apoie" target="_blank">Clique aqui e apoie nosso ministério! (PIX QRCode)</a>
         </div>
         <div id="footer-copyright">
             &#169
             2023 Todos os direitos reservados.
         </div>
+        
     </footer>
 </html>

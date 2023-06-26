@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="./styles2.css">
         <link rel="icon" href="./img/folhafigueiramarrom.png">
     </head>
-    <body class="container">
+    <body class="container" id="fundomusic">
         <nav class="menu-h">
             <div class="btn-expandir">
                 <i class="bi bi-list"></i>
@@ -54,9 +54,19 @@
             </ul>
         </nav>
         <main>
-            <h1 class="h1">Nossas músicas</h1>
+            <div class="folhaefigueira">
+                <img src="img/folhafigueiramarrom.png" width="50px"/>
+                <img src="img/FGR_full.png" width="200px"/>
+            </div>
+            <h1 id="nossasmusicas">Nossas músicas</h1>
             <iframe style="border-radius:40px" src="https://open.spotify.com/embed/artist/27UcjKJzQvsTbhUVExic9h?utm_source=generator" width="100%" height="480" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <h2 id="txtclipe">Videoclipe da música "Improvável Eu"</h2>
+            <iframe width="600" height="350" src="https://www.youtube.com/embed/5oUgmklCUP8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </main>
+        <div id="botaoroll">
+            <img id="imgbotao" src="./img/down-arrow.svg">
+            <script src="./main.js"></script>
+        </div>
         <footer class="footer_msc">
             <div id="footer_content">
                 <div id="footer_contacts">
@@ -97,6 +107,7 @@
                         <a href="https://deezer.page.link/QgsSSpfqy2uJT7579" class="footer-link" target="_blank" >Deezer</a>
                     </li>
                 </ul>
+                <a href="./img/pix.png" id="apoie" target="_blank">Clique aqui e apoie nosso ministério! (PIX QRCode)</a>
             </div>
             <div id="footer-copyright">
                 &#169
