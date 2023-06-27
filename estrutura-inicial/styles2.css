@@ -19,8 +19,6 @@
 }
 
 body{
-    height: 100%;
-    background-color: #1f1515;
     color:#78665D;
     position: relative;
     flex-grow: 1;
@@ -41,6 +39,20 @@ table{
     margin-top: 50px;
     border: 7px solid #78665D;
 }
+
+input[type=checkbox]{
+    display: none;
+   } 
+
+.btn-mobile{
+    display:none;
+}
+
+.bibi-list {
+    display: block;
+    font-size: 24px;
+    user-select: none;
+   }
 
 th, caption{
     padding: 8px;
@@ -73,6 +85,11 @@ footer{
     width: 100%;
     color: var(--color-neutral-30);
     margin-top: 80px;  
+}
+
+.label-menu,
+.checkbox{
+            display: block;
 }
 
 nav.menu-h{
@@ -205,21 +222,22 @@ p{
 }
 
 .quemefigueira{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     margin-right: 50px;
 }
 
 #titleqmefigueira{
     color: #e6e6e6;
 }
-.qm{
+
+.qm {
     color: #e6e6e6;
 }
 
 #fotofigueira{
     width: 600px;
     padding: 40px;
-
 }
 
 .pedro{
@@ -379,4 +397,341 @@ background-image{
 #txtclipe{
     color: #e6e6e6;
     margin-bottom: 20px;
+}
+
+@media (max-width: 1440px){
+    footer{
+        width: 100%;
+    color: var(--color-neutral-30);
+    margin-top: 80px;  
+    }
+
+    #footer_social_media .footer-link{
+        font-size: 40px;
+        color: var(--color-neutral-30);
+        padding: 20px;    
+    }
+
+    .footer-list li{
+        display: inline;
+        padding: 2px;
+        margin-left: 2px;
+        margin-top: 2px;
+    }
+
+    #botaoroll{
+        width: 50px;
+        align-items: center;
+        margin-left: 94.9%;
+        margin-top: 47%;
+        display: flex;
+        position: fixed;
+        animation: jumping 1s linear infinite;
+        cursor: pointer;
+    }
+
+    h1{
+        margin-top: 30px;
+        font-size: 60px;
+    }
+
+    h2{
+        margin-top: 30px;
+        font-size: 35px;
+    }
+
+    p{
+        font-weight: bold;
+        font-size: 12px;
+    }
+
+    h4{
+        
+            margin-top: 20px;
+            font-size: 19px;
+    }
+
+    #fotofigueira{
+        width: 450px;
+    }
+
+    th, caption{
+        padding: 8px;
+        font-size: 23px;
+        font-weight: bold;
+        background-color: #78665d6b;
+        color:#e6e6e6;
+        border: 3px solid #78665D;
+    }
+
+    td{
+        border: 3px solid #78665D;
+        padding: 8px;
+        font-size: 20px;
+        color: #e6e6e6;
+    }
+
+    .formu{
+        margin-top: 20px;
+        font-weight: bold;
+        font-size: 22px;
+    }
+    
+    .campoform{
+        border-radius: 8px;
+        font-size: 22px;
+        margin-top: 10px;
+    }
+
+    #bodyobg{
+        background-position: absolute;
+    }
+    
+    #obg{
+        text-align: center;
+        height: 100vh;
+        padding: 90px;
+        margin-right: 90px;
+        color: #1f1515;
+    }
+
+    body{
+        color:#78665D;
+        flex-grow: 1;
+        background-image: url('./img/figueirafolha\ \(1\).png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #bodyobg {
+        background-position-y: -260px;
+    }
+
+    #mainobg {
+        height: 100vh;
+    }
+
+    #bodyqm {
+        background-position-y: -260px;
+    }
+
+    #fundomusic {
+        background-position-y: -190px;
+    }
+
+    #folhaetxtfooter{
+        width:30%;
+        height: 30%;
+    }
+
+}
+
+@media (max-width: 768px){
+
+
+    footer{
+        width: 100%;
+        color: var(--color-neutral-30);  
+        display: grid;
+        grid-template-rows: 1fr;
+    }
+
+    #footer_social_media .footer-link{
+        font-size: 20px;
+        color: var(--color-neutral-30);
+        padding: 4px;    
+    }
+
+    .footer-list li{
+        display: inline;
+        padding: 2px;
+        margin-left: 2px;
+        margin-top: 2px;
+    }
+
+    #botaoroll{
+        width: 50px;
+        align-items: center;
+        margin-left: 89.9%;
+        margin-top: 47%;
+        display: flex;
+        position: fixed;
+        animation: jumping 1s linear infinite;
+        cursor: pointer;
+    }
+
+    h1{
+        margin-top: 20px;
+        font-size: 50px;
+    }
+
+    h2{
+        margin-top: 30px;
+        font-size: 25px;
+    }
+
+    p{
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    h4{
+        
+            margin-top: 20px;
+            font-size: 19px;
+    }
+
+    #fotofigueira{
+        width: 500px;
+    }
+
+    th, caption{
+        padding: 8px;
+        font-size: 23px;
+        font-weight: bold;
+        background-color: #78665d6b;
+        color:#e6e6e6;
+        border: 3px solid #78665D;
+    }
+
+    td{
+        border: 3px solid #78665D;
+        padding: 8px;
+        font-size: 20px;
+        color: #e6e6e6;
+    }
+
+    .formu{
+        margin-top: 20px;
+        font-weight: bold;
+        font-size: 22px;
+    }
+    
+    .campoform{
+        border-radius: 8px;
+        font-size: 22px;
+        margin-top: 10px;
+    }
+
+    #bodyobg{
+        background-position: absolute;
+    }
+    
+    #obg{
+        text-align: center;
+        height: 100vh;
+        padding: 90px;
+        margin-right: 90px;
+        color: #1f1515;
+    }
+
+    body{
+        color:#78665D;
+        flex-grow: 1;
+        background-image: url('./img/figueirafolha\ \(1\).png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #bodyobg {
+        background-position-y: -260px;
+    }
+
+    #mainobg {
+        height: 100vh;
+    }
+
+    #bodyqm {
+        background-position-y: -260px;
+        background-repeat: repeat;
+    }
+
+    #fundomusic {
+        background-position-y: -190px;
+    }
+
+    #apoie{
+        color: #e6e6e6;
+        font-weight: bolder;
+        font-size: 16px;
+        margin-left: 50px;
+    }
+
+    #folhaetxtfooter{
+        width: 70px;
+    }
+
+    main .quemefigueira{
+        display: block;
+        
+    }
+
+
+    .footer-list li{
+        display: block;
+        margin-left: 20px;
+        font-size: 16px;
+    }
+
+    #footer_content{
+        background-color: var(--color-neutral-10);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 60px;
+    }
+    
+    
+    #footer_social_media {
+        display: flex;
+        gap: 0.5rem;
+        margin-top: 3rem;
+        margin-left: 40px;
+    }
+    
+    #footer_social_media .footer-link{
+        font-size: 25px;
+        color: var(--color-neutral-30);
+        padding: 10px;
+    }
+
+    #plataformas{
+        font-size: 15px;
+        margin-left: 40px;
+        margin-top: px;   
+    }
+
+    #clipe{
+        width: 500px;
+        height: 240px;
+    }
+
+    body{
+        color:#78665D;
+        position: relative;
+        flex-grow: 1;
+        background-image: url('./img/figueirafolha\ \(1\).png');
+        background-repeat: -norepeat;
+        background-size: cover;
+        background-position-x: -350px;
+        background-position-y: -150px;
+    }
+
+    #fundoloja{
+        background-position-x: -250px;
+        background-position-y: 0px;
+    }
+
+    #ouca{
+        color: #1f1515;
+        font-weight: bolder;
+        font-size: large;
+    }
+
+@media (max-width: 480px){
+    
+
+}
+
+
+
 }
