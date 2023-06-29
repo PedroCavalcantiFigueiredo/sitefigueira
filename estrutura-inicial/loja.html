@@ -11,59 +11,79 @@
 </head>
 <body class="container" id="fundoloja">
     <div class="btn-expandir">
-        <i class="bi bi-list"></i>
+        <i id="btnMenu" class="bi bi-list"></i>
     </div>
-    <nav class="menu-h">
-        <input type="checkbox" id="checkbox" class="checkbox"/>
-        <label for="checkbox" class="label-menu"
-            >Menu<span class="hamburger"></span>
-        </label>
-        
-        <ul>
-            <li class="item-menu">
-                <a href='./index2.html'>
-                    <span class="icon"><i class="bi bi-house-fill"></i></span>
-                    <span class="txt-link">Início</span>
-                </a>
-            </li>
-            <li class="item-menu">
-                <a href='./quemefigueira.html'>
-                    <span class="icon"><img id="folhabranca" src="./img/Documento-de-Davi-Figueiredo-_1_.ico"></img></span>
-                    <span class="txt-link">Figueira</span>
-                </a>
-            </li>
-            <li class="item-menu">
-                <a href='./music.html'>
-                    <span class="icon"><i class="bi bi-file-earmark-music-fill"></i></span>
-                    <span class="txt-link">Músicas</span>
-                </a>
-            </li>
-            <li class="item-menu">
-                <a href='./agenda.html'>
-                    <span class="icon"><i class="bi bi-calendar2-check-fill"></i></span>
-                    <span class="txt-link">Agenda</span>
-                </a>
-            </li>
-            <li class="item-menu">
-                <a href='./loja.html'>
-                    <span class="icon"><i class="bi bi-bag-check-fill"></i></span>
-                    <span class="txt-link">Loja</span>
-                </a>
-            </li>
-            <li class="item-menu">
-                <a href='./contato.html'>
-                    <span class="icon"><i class="bi bi-envelope-fill"></i></span>
-                    <span class="txt-link">Contato</span>
-                </a>
-            </li>   
-        </ul>
-    </nav>
+    <header id="header">  
+        <nav class="menu-h" id="nav">  
+            <ul id="menu">
+                <button class="btn-mobile">Menu</button>
+                <li class="item-menu">
+                    <a href='./index2.html'>
+                        <span class="icon"><i class="bi bi-house-fill"></i></span>
+                        <span class="txt-link">Início</span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href='./quemefigueira.html'>
+                        <span class="icon"><img id="folhabranca" src="./img/Documento-de-Davi-Figueiredo-_1_.ico"></img></span>
+                        <span class="txt-link">Figueira</span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href='./music.html'>
+                        <span class="icon"><i class="bi bi-file-earmark-music-fill"></i></span>
+                        <span class="txt-link">Músicas</span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href='./agenda.html'>
+                        <span class="icon"><i class="bi bi-calendar2-check-fill"></i></span>
+                        <span class="txt-link">Agenda</span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href='./loja.html'>
+                        <span class="icon"><i class="bi bi-bag-check-fill"></i></span>
+                        <span class="txt-link">Loja</span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href='./contato.html'>
+                        <span class="icon"><i class="bi bi-envelope-fill"></i></span>
+                        <span class="txt-link">Contato</span>
+                    </a>
+                </li>   
+            </ul>
+        </nav>
+        <nav id="menumobile">
+            <ul id="menu-mobile">
+                <li class="item-menu-mobile">
+                    <a href='./index2.html'>Início</a>
+                </li> 
+                <li class="item-menu-mobile">
+                    <a href='./quemefigueira.html'>Figueira</a>
+                </li>   
+                <li class="item-menu-mobile">
+                    <a href='./music.html'>Músicas</a>
+                </li>
+                <li class="item-menu-mobile">
+                    <a href='./agenda.html'>Agenda</a>
+                </li>   
+                <li class="item-menu-mobile">
+                    <a href='./loja.html'>Loja</a>
+                </li>  
+                <li class="item-menu-mobile">
+                    <a href='./contato.html'>Contato</a>
+                </li>   
+            </ul>
+        </nav>
+    </header>    
     <main>
         <div class="folhaefigueira">
             <img src="img/folhafigueiramarrom.png" width="50px"/>
             <img src="img/FGR_full.png" width="200px"/>
         </div>
-        <h1 class="h1">Loja Figueira em breve!</h1>
+        <p class="breve">Loja Figueira em breve!</p>
     </main>
     <div id="botaoroll">
         <img id="imgbotao" src="./img/down-arrow.svg">
@@ -92,8 +112,8 @@
                     </div>
             </div>
         </div>
-        <p id="plataformas">Streamings</p>
         <ul class="footer-list">
+            <p id="plataformas">Streamings</p>
             <li>
                 <a href="https://open.spotify.com/intl-pt/artist/27UcjKJzQvsTbhUVExic9h?si=JTp3tVE0QHKI5XsdPF5RvQ" class="footer-link" target="_blank">Spotify</a>
             </li>
@@ -112,6 +132,7 @@
         </ul>
         <a href="./img/pix.png" id="apoie" target="_blank">Clique aqui e apoie nosso ministério! (PIX QRCode)</a>
     </div>
+    
     <div id="footer-copyright">
         &#169
         2023 Todos os direitos reservados.

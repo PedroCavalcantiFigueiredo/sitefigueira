@@ -18,6 +18,10 @@
     text-decoration: none;
 }
 
+.qmpedro{
+    color:#e6e6e6
+}
+
 body{
     color:#78665D;
     position: relative;
@@ -524,6 +528,10 @@ background-image{
         height: 30%;
     }
 
+    .menumobile{
+        display:none;
+    }
+
 }
 
 @media (max-width: 768px){
@@ -726,12 +734,233 @@ background-image{
         font-weight: bolder;
         font-size: large;
     }
-
-@media (max-width: 480px){
-    
-
 }
 
+    @media (max-width: 600px){
+
+        .menu-h{
+            display: none;
+        }
+
+        html, body{
+            width:100%;
+            overflow-x: hidden;
+            align-items: center;
+            justify-content: center;        
+        }
+
+        main{
+            width: 100vh;
+            margin-left: 300px;
+        }
+
+        footer{
+            width: 100vh;
+        }
+
+        h1 {
+            font-size: 37px;
+            text-align: center;
+            margin-right: 250px;}
+            
+        h2{
+            font-size: 23px;
+            margin-left: 80px;
+            margin-right: 200px;
+
+        }
+        h3{
+            font-size: 15px;
+            text-align: center;
+        }
+        h4{
+            font-size: 14px;
+            margin-left: 80px;
+        }
+
+        p{
+            width: 330px;
+            align-items: center;
+            margin-left: 75px;
+            text-align: center;
+        }
+
+        #fotofigueira{
+            width: 400px;
+            margin-left: 40px;
+        }
+
+        footer{
+            width: 100vh;
+            height: 100%;
+        }
+
+        #peicon{
+            margin-right: 25px;
+            font-size: 15px;
+        }
+
+        #apoie{
+            font-size: 12px;
+            margin-left: 150px;
+        }
+
+        #footer_contacts{
+            display: flex-box;
+            height: 150px;
+        }
+
+        .footer-list{
+            display:none;
+        }
 
 
-}
+        #footer-copyright{
+            margin-left: -95px;
+            font-size: 10px;
+        }
+
+        #footer_social_media{
+            margin-left: 140px;
+            font-size: 50;
+        }
+
+        #sigatxt{
+            margin-left:-50px;
+            font-size: 10px;
+        }
+
+        #fotoindex{
+            width: 350px;
+            margin-left: 70px;
+        }
+
+        #somos{
+            font-size: 15px;
+        }
+
+        #ouca{
+            color: #e6e6e6;
+            font-size: 15px;
+        }
+
+        iframe{
+            width: 300px;
+            margin-left: 95px;
+        }
+
+        .folhaefigueira{
+            margin-right: 250px;
+        }
+
+        #logomaior{
+            width: 50px;
+        }
+
+        #logomaior2{
+            width: 200px;
+        }
+
+        .btn-mobile{
+            margin-right: 200px;
+        }
+
+        table{
+            width: 60px;
+            margin-left: 80px;
+        }
+
+        td, tr, th{
+            font-size: 16px;
+        }
+
+        #logoagenda{
+            margin-left: 100px;
+        }
+
+        #botaoroll{
+            width: 50px;
+            align-items: center;
+            margin-left: 96.9%;
+            margin-top: 47%;
+            display: none;
+            position: fixed;
+            animation: jumping 1s linear infinite;
+            cursor: pointer;
+        }
+
+        #txtclipe{
+            font-size: 15px;
+            margin-right: 250px;
+        }
+
+        #clipe{
+            width: 300px;
+        }
+
+        #menumobile {
+            display:none;
+            background-color: #2e2e2e;
+            width: 100vh;
+            height:360px;
+            padding-top: 10px;
+            
+        }
+
+        .item-menu-mobile a{
+            color: #e6e6e6;
+            text-decoration: none;
+            margin-top: 900px;
+            margin: 10px;
+            margin-left: 180px;
+            width: 500px;
+            display: block;
+            padding: 10px;
+            font-size: 20px;
+            
+            
+        }
+
+        #menumobile.active{
+            display: block;
+            position: absolute;
+            left: -180px;
+        }
+
+        .btn-expandir{
+            background-color: #2e2e2e;
+            font-size: 30px;
+        }
+
+        #compromissos{
+            font-size: 26px;
+        }
+
+         .breve {
+            font-size: 25px;
+            margin-top: 250px;
+        }
+
+        .formu{
+            margin-left: 80px;
+        }
+
+        .campoform{
+            font-size: 15px;
+        }
+
+        .qmpedro{
+            margin-right: 350px;
+        }
+
+        .qm{
+            margin-left: 150px;
+        }
+
+        #obg{
+            margin-right: 250px;
+            position:relative;
+            padding-top: 300px;
+
+        }
+    }
